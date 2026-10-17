@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>求签</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="fortune-body">
+<div class="container">
+    <h1>🔮 今日运势</h1>
+    <div class="info" id="userInfo">加载中…</div>
+
+    <h3>请选择你关注的领域</h3>
+    <div class="interests">
+        <label><input type="radio" name="interests" value="爱情" checked>💗 爱情</label>
+        <label><input type="radio" name="interests" value="事业">💼 事业</label>
+        <label><input type="radio" name="interests" value="财运">💰 财运</label>
+        <label><input type="radio" name="interests" value="健康">🌿 健康</label>
+        <label><input type="radio" name="interests" value="家庭">🏠 家庭</label>
+    </div>
+
+    <button id="btn" onclick="doFortune()">开始求签</button>
+
+    <div class="logout">
+        <a onclick="doLogout()">退出登录</a>
+    </div>
+</div>
+<script src="js/fortune.js"></script>
+</body>
+</html>

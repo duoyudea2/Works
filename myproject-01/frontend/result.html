@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>解签结果 · Oracle</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="result-body">
+<div class="result-container">
+    <div class="card">
+        <h1>🌿 你的今日签诗</h1>
+        <div class="subtitle" id="subtitle"></div>
+
+        <div class="level" id="level"></div>
+        <div class="poem" id="poem"></div>
+
+        <h3>📖 AI 解读</h3>
+        <div class="text" id="interpretation"></div>
+    </div>
+
+    <div class="card">
+        <h3>🌏 多语言解读</h3>
+        <div class="tabs">
+            <button class="active" onclick="switchTab(event, 'zh')">中文</button>
+            <button onclick="switchTab(event, 'en')">English</button>
+            <button onclick="switchTab(event, 'jp')">日本語</button>
+        </div>
+        <div id="tab-zh" class="tab-content active"><div class="text" id="text-zh"></div></div>
+        <div id="tab-en" class="tab-content"><div class="text" id="text-en"></div></div>
+        <div id="tab-jp" class="tab-content"><div class="text" id="text-jp"></div></div>
+    </div>
+
+    <div class="back">
+        <a href="fortune.html">← 返回重新求签</a>
+    </div>
+</div>
+<script src="js/result.js"></script>
+</body>
+</html>
